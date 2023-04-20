@@ -1,0 +1,22 @@
+package satyam.file;
+import java.util.*;
+public class vcf {
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		//Scanner sc=new Scanner(System.in);
+		 int oper=sc.nextInt();
+		int n=5;
+		int pos=1;
+		int bitmask=1<<pos;
+		if(oper==1) {
+			int newnumber=bitmask | n;
+			System.out.println(newnumber);
+		}
+		// some problem in code plese cheack it:
+		else {
+			int number=bitmask ^ n;
+			System.out.println(number);
+		}
+	}	         
+}
